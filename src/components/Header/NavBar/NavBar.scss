@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    width: $min-width-laptop;
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        color: #fff;
+        padding: 10px;
+    }
+
+    &__item.active {
+        background-color: $background-color-nav-item_hover-active;
+    }
+
+    &__item:hover {
+        background-color: $background-color-nav-item_hover-active;
+    }
+}
