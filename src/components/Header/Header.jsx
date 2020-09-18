@@ -3,9 +3,10 @@ import "../../Sass/style.scss";
 import NavBar from './NavBar/NavBar';
 
 const Header = (props) => {
+    // debugger;
     return (
         <header className="header">
-            <NavBar />
+            <NavBar navbar={props.state.navbar}/>
         </header>
     );
 }

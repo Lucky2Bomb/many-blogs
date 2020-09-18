@@ -1,13 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const NavBar = () => {
+const NavBar = (props) => {
+    let NavLinkArray = props.navbar.links.map((item) => (
+        <NavLink className="navbar__item" to={item.link}>{item.name}</NavLink>
+    ));
     return (
         <div className="navbar__wrapper">
             <nav className="navbar">
-                <NavLink className="navbar__item" to="/main">Главная</NavLink>
-                <NavLink className="navbar__item" to="/registration">Создать блог / Регистрация</NavLink>
-                <NavLink className="navbar__item" to="/auth">Войти</NavLink>
+                {NavLinkArray}
             </nav>
         </div>
     );

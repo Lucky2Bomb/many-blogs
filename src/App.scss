@@ -14,6 +14,9 @@ body {
 }
 
 .content {
-    grid-area: content;
+    display: flex;
     background-color: $color-content;
+    width: $width-content-laptop;
+    grid-area: content;
+    justify-self: center;
 }
